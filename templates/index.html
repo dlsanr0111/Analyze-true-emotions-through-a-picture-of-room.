@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방으로 보는 내 심리</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+            background-color: #f0f8ff;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        form {  
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>방으로 보는 내 심리</h1>
+    <p><strong>{{ visitor_count }}</strong>번째 TEST. 안녕하세요😊</p>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <label for="image">room image :</label>
+        <input type="file" id="image" name="image" accept="image/*"><br><br>
+        <button type="submit">Analyze</button>
+    </form>
+</body>
+</html>
